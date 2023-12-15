@@ -65,7 +65,7 @@
   transition: color .3s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.w--current {
   color: var(--dark-violet);
 }
 
@@ -277,8 +277,7 @@
 .div-vsl {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
 }
 
 .grid-3 {
@@ -332,7 +331,7 @@
 
 .div-block-2.auto {
   height: 100%;
-  background-image: url('../images/image-woman.png');
+  background-image: url('../images/image-woman.webp');
   background-position: 50%;
   background-size: cover;
 }
@@ -349,8 +348,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 180px;
+  padding: 120px 20px 180px;
   display: flex;
 }
 
@@ -423,8 +421,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 56px 20px;
   display: flex;
 }
 
@@ -452,8 +449,7 @@
 .div-content {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
 }
 
 .depoiments-section {
@@ -467,8 +463,7 @@
   max-width: 1366px;
   flex-direction: column;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 120px;
+  padding: 0 20px 120px;
   display: flex;
 }
 
@@ -531,9 +526,7 @@
 .div-faq {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-right: 0;
+  padding: 120px 20px;
 }
 
 .grid-9 {
@@ -608,8 +601,7 @@
 .div-contact {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
   position: relative;
 }
 
@@ -664,6 +656,7 @@
 }
 
 .textarea {
+  color: #fff;
   background-color: rgba(0, 0, 0, 0);
   border-top: 1px #000;
   border-bottom: 1px solid #fff;
@@ -671,6 +664,8 @@
   border-right: 0 rgba(0, 0, 0, 0);
   border-radius: 0;
   padding: 20px 0 50px;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
 }
 
 .submit-button {
@@ -709,8 +704,7 @@
 .div-price {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
 }
 
 .brand {
@@ -936,7 +930,7 @@
   z-index: -3;
   width: 50%;
   height: 100%;
-  background-image: url('../images/image-hero.png');
+  background-image: url('../images/image-hero.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1124,8 +1118,7 @@
   border-radius: 1px;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   display: flex;
 }
 
@@ -1169,8 +1162,7 @@
 .div-hero1 {
   width: 100%;
   max-width: 1366px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 20px;
 }
 
 .video {
@@ -1208,6 +1200,114 @@
 
 .link-block-7, .link-block-8 {
   text-decoration: none;
+}
+
+.div-button-whatsapp {
+  z-index: 10;
+  width: 72px;
+  height: 72px;
+  max-height: 72px;
+  max-width: 72px;
+  opacity: 1;
+  background-color: #18b92d;
+  border-radius: 400px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: auto;
+  bottom: 4%;
+  left: auto;
+  right: 2%;
+}
+
+.image-8 {
+  width: 40px;
+  height: 40px;
+}
+
+.text-field-2 {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px #fff;
+  border-bottom-style: solid;
+  margin-bottom: 40px;
+  padding-left: 0;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
+}
+
+.text-field-3 {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px #000;
+  border-bottom: 1px solid #fff;
+  border-radius: 1px;
+  margin-bottom: 40px;
+  padding-left: 0;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
+}
+
+.success-message {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.text-block-10 {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: Opensauceone, sans-serif;
+}
+
+.error-message {
+  color: red;
+  background-color: rgba(255, 222, 222, 0);
+  margin-top: 12px;
+  font-family: Opensauceone, sans-serif;
+}
+
+.success-message-2 {
+  color: #fff;
+  background-color: rgba(221, 221, 221, 0);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
+}
+
+.text-block-11 {
+  color: red;
+  margin-top: 12px;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
+}
+
+.error-message-2 {
+  background-color: rgba(255, 222, 222, 0);
+}
+
+.success-message-3 {
+  color: #fff;
+  background-color: rgba(221, 221, 221, 0);
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: Opensauceone, sans-serif;
+  font-size: 16px;
+}
+
+.error-message-3 {
+  color: red;
+  background-color: rgba(255, 222, 222, 0);
+  margin-top: 12px;
+  font-family: Opensauceone, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -1503,6 +1603,12 @@
     top: 102px;
   }
 
+  .button-1 {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    padding: 32px 20px;
+  }
+
   .hero1-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -1702,6 +1808,7 @@
 
   .heading-2.right {
     text-align: center;
+    font-size: 24px;
   }
 
   .paragraph, .paragraph.grey.center {
@@ -1773,7 +1880,7 @@
   }
 
   .faq-section {
-    display: none;
+    display: block;
   }
 
   .grid-9 {
@@ -1786,7 +1893,12 @@
   }
 
   .contact-section {
-    display: none;
+    display: block;
+  }
+
+  .div-contact {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .grid-12 {
@@ -1834,6 +1946,10 @@
     padding: 20px 0;
   }
 
+  .div-block-8 {
+    align-items: center;
+  }
+
   .hero1-section {
     display: block;
   }
@@ -1842,10 +1958,24 @@
     padding-top: 80px;
     padding-bottom: 120px;
   }
+
+  .paragraph-8 {
+    font-size: 20px;
+  }
+
+  .div-button-whatsapp {
+    right: 8%;
+  }
 }
 
 #w-node-_45fb8bb7-096e-0d82-2328-56da72569ecb-47c784c0, #w-node-_279c2d46-f289-0562-efe8-80a6eb8a3b28-47c784c0, #w-node-_36aee284-0175-10e4-dc70-fec2aefc613a-47c784c0, #w-node-c3ca3d9b-7d7f-76df-f194-cbe6eb763f6b-47c784c0, #w-node-_0ce2c6cd-e5da-d154-1452-4d75a21a9685-47c784c0, #w-node-_2d398721-5c31-9bbd-64e4-9bf711fd0708-47c784c0, #w-node-_24c103d3-9d6a-50ec-5816-d66ee74ae813-47c784c0, #w-node-_6dd16763-bf40-3ce3-9c0b-b4a027f1e18c-47c784c0, #w-node-_546801c4-5ab2-cdb5-ccbf-14636ce251f9-47c784c0, #w-node-_91c289a3-9a0c-3a8a-ad8d-431a01843c8c-47c784c0, #w-node-_2093e252-b0f4-8971-b0ef-ffd894435153-47c784c0, #w-node-e478440f-aeed-8e03-2a73-916346881fa6-47c784c0, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a3-47c784c0, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a4-47c784c0, #w-node-_39b10e7f-d95b-814e-a434-d2b02012e02d-47c784c0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5cc-47c784c0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c1-47c784c0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c3-47c784c0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c7-47c784c0, #w-node-_7b6b400f-ae68-cb6d-5cb4-c3f609003ed2-47c784c0, #w-node-_52f94d2c-4501-3ce4-2ef1-2665ce214972-47c784c0, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db4-47c784c0, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db5-47c784c0, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7593-47c784c0, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7594-47c784c0, #w-node-f085eb26-bad4-dc07-7e74-657860e4909b-47c784c0, #w-node-f085eb26-bad4-dc07-7e74-657860e4909c-47c784c0, #w-node-bb517c62-13be-0117-0cd3-24dc65266555-47c784c0, #w-node-bb517c62-13be-0117-0cd3-24dc65266556-47c784c0, #w-node-e07081ab-e294-482e-670d-9da46796d8cc-47c784c0, #w-node-e07081ab-e294-482e-670d-9da46796d8cd-47c784c0, #w-node-_232865a7-9d0a-a906-0054-79de83a8bd3f-47c784c0, #w-node-_5cc3418a-19ba-b103-da21-0848f72bea08-47c784c0, #w-node-_4e0c1cdd-864d-3608-4a20-8e50583810f4-47c784c0, #w-node-a1a33de5-8814-5bcb-fd43-952e82b5a5e3-47c784c0, #w-node-_6fb1aa9f-140d-06c7-06e4-b6bfb570c63c-47c784c0, #w-node-_0b5608b5-8f0c-4b32-5834-38bb24356b02-47c784c0, #w-node-a531aef4-f966-17e6-3d5f-f55a5c7e1245-47c784c0, #w-node-c540a6fa-fd6d-2ced-46c4-9d526ea7aa79-47c784c0, #w-node-_3b3a09b3-134b-aa77-91fa-89a8e6806084-47c784c0, #w-node-_3752a276-7f53-c480-effd-d1a26696557a-47c784c0, #w-node-_6fae63ba-296b-d083-4f76-aac3f870705a-47c784c0, #w-node-c9505120-c6e7-643c-3d02-dcb3dad11ced-47c784c0, #w-node-_32c57d97-3c16-e3e4-b7ba-97beb28b764d-47c784c0, #w-node-_63e7e21d-91d5-9d7d-9693-9f89e2a75f4a-47c784c0, #w-node-_68d479d1-56bc-1e6f-a728-b718f620be6e-47c784c0, #w-node-e5f5a3b1-5ce8-5e13-5e85-eb8ecbfab20e-47c784c0, #w-node-_5ff1fbb6-1ee1-a228-3920-b748f197219f-47c784c0, #w-node-_45fb8bb7-096e-0d82-2328-56da72569ecb-2ce784f0, #w-node-_279c2d46-f289-0562-efe8-80a6eb8a3b28-2ce784f0, #w-node-_36aee284-0175-10e4-dc70-fec2aefc613a-2ce784f0, #w-node-c3ca3d9b-7d7f-76df-f194-cbe6eb763f6b-2ce784f0, #w-node-_0ce2c6cd-e5da-d154-1452-4d75a21a9685-2ce784f0, #w-node-_2d398721-5c31-9bbd-64e4-9bf711fd0708-2ce784f0, #w-node-_24c103d3-9d6a-50ec-5816-d66ee74ae813-2ce784f0, #w-node-_6dd16763-bf40-3ce3-9c0b-b4a027f1e18c-2ce784f0, #w-node-_546801c4-5ab2-cdb5-ccbf-14636ce251f9-2ce784f0, #w-node-_91c289a3-9a0c-3a8a-ad8d-431a01843c8c-2ce784f0, #w-node-_2093e252-b0f4-8971-b0ef-ffd894435153-2ce784f0, #w-node-e478440f-aeed-8e03-2a73-916346881fa6-2ce784f0, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a3-2ce784f0, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a4-2ce784f0, #w-node-_39b10e7f-d95b-814e-a434-d2b02012e02d-2ce784f0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5cc-2ce784f0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c1-2ce784f0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c3-2ce784f0, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c7-2ce784f0, #w-node-_7b6b400f-ae68-cb6d-5cb4-c3f609003ed2-2ce784f0, #w-node-_52f94d2c-4501-3ce4-2ef1-2665ce214972-2ce784f0, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db4-2ce784f0, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db5-2ce784f0, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7593-2ce784f0, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7594-2ce784f0, #w-node-f085eb26-bad4-dc07-7e74-657860e4909b-2ce784f0, #w-node-f085eb26-bad4-dc07-7e74-657860e4909c-2ce784f0, #w-node-bb517c62-13be-0117-0cd3-24dc65266555-2ce784f0, #w-node-bb517c62-13be-0117-0cd3-24dc65266556-2ce784f0, #w-node-e07081ab-e294-482e-670d-9da46796d8cc-2ce784f0, #w-node-e07081ab-e294-482e-670d-9da46796d8cd-2ce784f0, #w-node-_232865a7-9d0a-a906-0054-79de83a8bd3f-2ce784f0, #w-node-_5cc3418a-19ba-b103-da21-0848f72bea08-2ce784f0, #w-node-_4e0c1cdd-864d-3608-4a20-8e50583810f4-2ce784f0, #w-node-a1a33de5-8814-5bcb-fd43-952e82b5a5e3-2ce784f0, #w-node-_6fb1aa9f-140d-06c7-06e4-b6bfb570c63c-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb7d-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb7e-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb82-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb84-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb85-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb86-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb87-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb89-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb8a-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb8b-2ce784f0, #w-node-e2da30e3-f469-3f66-29bb-101a78c7bb8c-2ce784f0, #w-node-_45fb8bb7-096e-0d82-2328-56da72569ecb-fe2e4e17, #w-node-_279c2d46-f289-0562-efe8-80a6eb8a3b28-fe2e4e17, #w-node-_36aee284-0175-10e4-dc70-fec2aefc613a-fe2e4e17, #w-node-c3ca3d9b-7d7f-76df-f194-cbe6eb763f6b-fe2e4e17, #w-node-_0ce2c6cd-e5da-d154-1452-4d75a21a9685-fe2e4e17, #w-node-_2d398721-5c31-9bbd-64e4-9bf711fd0708-fe2e4e17, #w-node-_24c103d3-9d6a-50ec-5816-d66ee74ae813-fe2e4e17, #w-node-_6dd16763-bf40-3ce3-9c0b-b4a027f1e18c-fe2e4e17, #w-node-_546801c4-5ab2-cdb5-ccbf-14636ce251f9-fe2e4e17, #w-node-_91c289a3-9a0c-3a8a-ad8d-431a01843c8c-fe2e4e17, #w-node-_2093e252-b0f4-8971-b0ef-ffd894435153-fe2e4e17, #w-node-e478440f-aeed-8e03-2a73-916346881fa6-fe2e4e17, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a3-fe2e4e17, #w-node-_3edce1d0-901f-4d65-51ba-a142e98e78a4-fe2e4e17, #w-node-_39b10e7f-d95b-814e-a434-d2b02012e02d-fe2e4e17, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5cc-fe2e4e17, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c1-fe2e4e17, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c3-fe2e4e17, #w-node-_332f8858-ffb6-972a-e8ea-5b0d2c2bd5c7-fe2e4e17, #w-node-_7b6b400f-ae68-cb6d-5cb4-c3f609003ed2-fe2e4e17, #w-node-_52f94d2c-4501-3ce4-2ef1-2665ce214972-fe2e4e17, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db4-fe2e4e17, #w-node-_2843e4d5-dffe-3742-0a63-3f58467d4db5-fe2e4e17, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7593-fe2e4e17, #w-node-_30cfea21-95e6-60a6-b108-483c78bc7594-fe2e4e17, #w-node-f085eb26-bad4-dc07-7e74-657860e4909b-fe2e4e17, #w-node-f085eb26-bad4-dc07-7e74-657860e4909c-fe2e4e17, #w-node-bb517c62-13be-0117-0cd3-24dc65266555-fe2e4e17, #w-node-bb517c62-13be-0117-0cd3-24dc65266556-fe2e4e17, #w-node-e07081ab-e294-482e-670d-9da46796d8cc-fe2e4e17, #w-node-e07081ab-e294-482e-670d-9da46796d8cd-fe2e4e17, #w-node-_232865a7-9d0a-a906-0054-79de83a8bd3f-fe2e4e17, #w-node-_5cc3418a-19ba-b103-da21-0848f72bea08-fe2e4e17, #w-node-_4e0c1cdd-864d-3608-4a20-8e50583810f4-fe2e4e17, #w-node-a1a33de5-8814-5bcb-fd43-952e82b5a5e3-fe2e4e17, #w-node-_6fb1aa9f-140d-06c7-06e4-b6bfb570c63c-fe2e4e17, #w-node-_0b5608b5-8f0c-4b32-5834-38bb24356b02-fe2e4e17, #w-node-a531aef4-f966-17e6-3d5f-f55a5c7e1245-fe2e4e17, #w-node-c540a6fa-fd6d-2ced-46c4-9d526ea7aa79-fe2e4e17, #w-node-_3b3a09b3-134b-aa77-91fa-89a8e6806084-fe2e4e17, #w-node-_3752a276-7f53-c480-effd-d1a26696557a-fe2e4e17, #w-node-_6fae63ba-296b-d083-4f76-aac3f870705a-fe2e4e17, #w-node-c9505120-c6e7-643c-3d02-dcb3dad11ced-fe2e4e17, #w-node-_32c57d97-3c16-e3e4-b7ba-97beb28b764d-fe2e4e17, #w-node-_63e7e21d-91d5-9d7d-9693-9f89e2a75f4a-fe2e4e17, #w-node-_68d479d1-56bc-1e6f-a728-b718f620be6e-fe2e4e17, #w-node-e5f5a3b1-5ce8-5e13-5e85-eb8ecbfab20e-fe2e4e17, #w-node-_5ff1fbb6-1ee1-a228-3920-b748f197219f-fe2e4e17 {
   grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_5548c8c3-0259-f1bf-e69b-c3439b5b1264-47c784c0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
 }
 
 
